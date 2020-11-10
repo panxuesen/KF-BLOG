@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "积分兑换",
+  "usingComponents": {
+    "tui-card": "/node-modules/thorui-uni/lib/thorui/tui-card/tui-card"
+  }
+}

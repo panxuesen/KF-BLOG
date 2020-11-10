@@ -1,0 +1,9 @@
+.clear-button {
+    padding: 0 !important;
+    background-color: transparent;
+    line-height: unset;
+    &::after {
+      display: none;
+    }
+}
+  

@@ -1,0 +1,1 @@
+<view class="content"><tui-card vue-id="768e4147-1" title="{{title}}" header="{{header}}" bind:__l="__l" vue-slots="{{['body','footer']}}"><view slot="body"><view class="tui-default">下单3元及以上的商品每一单积1分，累积积分可兑换礼品或红包</view></view><view slot="footer"><view class="tui-default">积分兑换请加群主微信</view></view></tui-card></view>

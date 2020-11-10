@@ -1,0 +1,64 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"name": "index",
+			"meta":{
+                "title": "帅子捡漏省钱积分"
+            },
+			"style": {
+				"navigationBarTitleText": "帅子捡漏省钱积分"
+				// "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/userList/index",
+			"name": "userList",
+			"meta":{
+                "title": "积分榜"
+            },
+			"style": {
+				"navigationBarTitleText": "积分榜"
+			}
+		},
+		{
+			"path": "pages/exchange/index",
+			"name": "exchange",
+			"meta":{
+                "title": "积分兑换"
+            },
+			"style": {
+				"navigationBarTitleText": "积分兑换"
+			}
+		}
+	],
+	"cloud": true,
+	"condition": { //模式配置，仅开发期间生效
+        "current": 0, //当前激活的模式（list 的索引项）
+        "list": [{
+            "name": "test", //模式名称
+            "path": "pages/index/index" //启动页面，必选
+        },{
+            "name": "userList",
+            "path": "pages/userList/index"
+        },{
+            "name": "exchange",
+            "path": "pages/exchange/index"
+        }]
+    },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": { // 此配置作用：组件可直接使用无需引入和注册
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+			"tui-(.*)": "thorui-uni/lib/thorui/tui-$1/tui-$1.vue",
+			"uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+			"tojoy-(.*)": "@/components/tojoy-$1/index.vue"
+		}
+	}
+}
